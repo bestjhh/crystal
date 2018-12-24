@@ -1,0 +1,690 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+.fakeloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fefefe;
+  z-index: 999;
+}
+.spinner2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+}
+.container1 > div,
+.container2 > div,
+.container3 > div {
+  width: 6px;
+  height: 6px;
+  background-color: #e74c3c;
+  border-radius: 100%;
+  position: absolute;
+  -webkit-animation: bouncedelay 1.2s infinite ease-in-out;
+  animation: bouncedelay 1.2s infinite ease-in-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.spinner2 .spinner-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.container2 {
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+.container3 {
+  -webkit-transform: rotateZ(90deg);
+  transform: rotateZ(90deg);
+}
+.circle1 {
+  top: 0;
+  left: 0;
+}
+.circle2 {
+  top: 0;
+  right: 0;
+}
+.circle3 {
+  right: 0;
+  bottom: 0;
+}
+.circle4 {
+  left: 0;
+  bottom: 0;
+}
+.container2 .circle1 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+.container3 .circle1 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+.container1 .circle2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+.container2 .circle2 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+.container3 .circle2 {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+.container1 .circle3 {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+.container2 .circle3 {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.container3 .circle3 {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+.container1 .circle4 {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+.container2 .circle4 {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+.container3 .circle4 {
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
+}
+@keyframes bouncedelay {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+@-ms-keyframes bouncedelay {
+  0%,
+  80%,
+  100% {
+    -ms-transform: scale(0);
+  }
+  40% {
+    -ms-transform: scale(1);
+  }
+}
+@-webkit-keyframes bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+button,
+input[type='button'] {
+  -webkit-appearance: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background: white;
+  z-index: -3;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+a,
+a:visited {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+ul {
+  list-style: none;
+}
+.mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 4;
+}
+#index .index-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+#index .people-txt {
+  margin-top: 3.3rem;
+}
+#index .people-txt p {
+  text-align: center;
+  color: white;
+  font-size: 0.28rem;
+  line-height: 0.5rem;
+}
+#index .crystal {
+  position: relative;
+  margin-top: 0.1rem;
+}
+#index .crystal .box {
+  position: absolute;
+  border-radius: 50%;
+  top: 1px;
+  left: calc(50% - 2.41rem);
+  width: 4.82rem;
+  height: 5rem;
+  z-index: 1;
+}
+#index .crystal .box .drop {
+  position: absolute;
+  top: 0.6rem;
+  left: 50%;
+  display: inline-block;
+  width: 10px;
+  height: 13px;
+  z-index: 333;
+  border-radius: 80% 0 55% 50% ;
+  -webkit-border-radius: 80% 0 55% 50%;
+  background-color: #FAD026;
+  transform: rotate(-45deg);
+  animation: ab 2s infinite;
+}
+@keyframes ab {
+  0% {
+    transform: rotate(-45deg) rotateZ(10deg) translate(-1px, 0px);
+  }
+  50% {
+    transform: rotate(-45deg) rotateZ(-10deg) translate(1px, 0px);
+  }
+  100% {
+    transform: rotate(-45deg) rotateZ(10deg) translate(-1px, 0px);
+  }
+}
+#index .crystal .box .wave {
+  width: 100%;
+  height: 100%;
+  background: #FAD026;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+#index .crystal .box .wave::before,
+#index .crystal .box .wave::after {
+  content: "";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: -100%;
+  left: -50%;
+}
+#index .crystal .box .wave::before {
+  background-color: #B52324;
+  border-radius: 40%;
+  animation: 8s rotate_before linear infinite;
+}
+#index .crystal .box .wave::after {
+  background-color: #B52324;
+  border-radius: 46%;
+  animation: 8s rotate_after linear infinite;
+}
+#index .crystal .box .loop::before,
+#index .crystal .box .loop::after {
+  animation: 8s loop0 linear infinite;
+}
+#index .crystal .box .loop .drop {
+  top: 200px;
+  transition: top 1s linear;
+}
+#index .crystal img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+#index .btns {
+  margin-top: -2.2rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+#index .btns .shake-btn {
+  line-height: 2.4rem;
+  width: 3.5rem;
+  background: url("../img/rock-btn.png") no-repeat;
+  background-size: 100% 100%;
+  color: transparent;
+}
+#index .btns .rule-btn,
+#index .btns .record-btn {
+  height: 0.55rem;
+  line-height: 0.55rem;
+  margin-top: 0.92rem;
+  border: 1px solid #FA592C;
+  background: linear-gradient(to right, #FF7C36, #FF6F23, #FA592C, #F44537);
+  box-sizing: border-box;
+  border-radius: 0.9rem;
+  font-size: 0.26rem;
+  color: white;
+}
+#index .btns .rule-btn a,
+#index .btns .record-btn a {
+  padding: 0 0.15rem 0 0.55rem;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+#index .btns .rule-btn a {
+  background: url("../img/icon-bag.png") 0.15rem center no-repeat;
+  background-size: 0.3rem auto;
+}
+#index .btns .record-btn a {
+  background: url("../img/icon-redbag.png") 0.15rem center no-repeat;
+  background-size: 0.3rem auto;
+}
+#index .win {
+  display: none;
+}
+#index .win section {
+  position: absolute;
+  width: 6rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 0.1rem;
+  box-sizing: border-box;
+}
+#index .win section .close {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: url("../img/icon-cancel.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: calc(50% - .25rem);
+  top: calc(100% + .4rem);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+#index .share {
+  display: none;
+}
+#index .share img {
+  width: 100%;
+}
+#index .phoneSubmit section {
+  padding: 2.68rem 0.7rem 0.5rem;
+  height: 7.43rem;
+  box-sizing: border-box;
+  background: url("../img/phone-box.png") no-repeat;
+  background-size: 100% auto;
+  -webkit-transform: translate(-50%, calc(-50% - 0.8rem));
+  transform: translate(-50%, calc(-50% - 0.8rem));
+}
+#index .phoneSubmit section form input {
+  display: block;
+  width: 100%;
+  height: 0.98rem;
+  border-radius: 0.1rem;
+  border: none;
+  outline: none;
+  color: #333333;
+  font-size: 0.26rem;
+  margin-bottom: 0.3rem;
+}
+#index .phoneSubmit section form input[type='text'] {
+  background: #E6E6E6;
+  padding-left: 0.3rem;
+  box-sizing: border-box;
+}
+#index .phoneSubmit section form input[type='text'].wrong {
+  color: #F54536;
+}
+#index .phoneSubmit section form input[type='text'].wrong::-webkit-input-placeholder {
+  color: #F54536;
+}
+#index .phoneSubmit section form input[type='text']::-webkit-input-placeholder {
+  color: #333333;
+}
+#index .phoneSubmit section form input[type='button'] {
+  margin: 1rem auto;
+  width: 4.2rem;
+  display: block;
+  line-height: 0.9rem;
+  font-size: 0.3rem;
+  color: transparent;
+  background: url("../img/phone-btn.png") no-repeat;
+  background-size: 100% 100%;
+}
+#index .phoneSubmit section form p {
+  color: #A4A29F;
+  font-size: 0.26rem;
+  text-align: center;
+}
+#index .prizeRecord section {
+  width: 6.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.1rem;
+  box-sizing: border-box;
+}
+#index .prizeRecord section > div {
+  background: #FFF9F1;
+  height: 7.35rem;
+  padding-top: 0.5rem;
+  box-sizing: border-box;
+  border-radius: 0.1rem;
+  padding-bottom: 0.4rem;
+  position: relative;
+}
+#index .prizeRecord section > div h4 {
+  position: absolute;
+  width: 100%;
+  top: -0.65rem;
+  font-size: 0.88rem;
+  text-align: center;
+  color: transparent;
+  background: url("../img/title-bless.png") center no-repeat;
+  background-size: auto 100%;
+}
+#index .prizeRecord section > div table {
+  width: 85%;
+  margin: 0.2rem auto 0;
+}
+#index .prizeRecord section > div table tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#index .prizeRecord section > div table tr td {
+  flex: 1;
+  text-align: center;
+  font-size: 0.26rem;
+  color: #000000;
+  line-height: 0.8rem;
+  border-bottom: 1px dashed #FFC5C4;
+}
+#index .prizeRecord section > div table tr td:nth-of-type(1) {
+  text-align: left;
+}
+#index .prizeRecord section > div table tr td:nth-of-type(2) {
+  text-align: right;
+}
+#index .prizeRecord section > div table tbody {
+  display: block;
+  width: 100%;
+  height: 5.4rem;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+#index .prizeRecord section > div div.get-btn {
+  height: 0.55rem;
+  line-height: 0.55rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+#index .prizeRecord section > div div.get-btn a {
+  border: 1px solid #FA592C;
+  background: linear-gradient(to right, #FF7C36, #FF6F23, #FA592C, #F44537);
+  box-sizing: border-box;
+  border-radius: 0.9rem;
+  font-size: 0.26rem;
+  color: white;
+  padding: 0 0.25rem 0 0.25rem;
+  display: inline-block;
+}
+#index .prizeRecord section > div .blessCount {
+  text-align: center;
+}
+#index .prizeRecord section > div .blessCount b {
+  line-height: 0.6rem;
+  font-size: 0.35rem;
+  letter-spacing: 1px;
+  background: linear-gradient(150deg, #FF9958, #CC1B1C);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#index .prizeRecord section > div .blessCount p {
+  color: #999999;
+  font-size: 0.26rem;
+}
+#index .rules section {
+  width: 6.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.1rem;
+  box-sizing: border-box;
+}
+#index .rules section > div {
+  background: white;
+  height: 7.35rem;
+  padding-top: 0.5rem;
+  box-sizing: border-box;
+  border-radius: 0.1rem;
+  padding-bottom: 0.4rem;
+  position: relative;
+}
+#index .rules section > div h4 {
+  position: absolute;
+  width: 100%;
+  top: -0.65rem;
+  font-size: 0.88rem;
+  text-align: center;
+  color: transparent;
+  background: url("../img/title-rule.png") center no-repeat;
+  background-size: auto 100%;
+}
+#index .rules section > div div {
+  height: 100%;
+  padding: 0 0.2rem 0.2rem;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+#index .rules section > div div h3 {
+  font-size: 0.29rem;
+  color: #D9303A;
+  margin-top: 0.2rem;
+  font-weight: normal;
+}
+#index .rules section > div div h3 span {
+  vertical-align: 2px;
+  display: inline-block;
+  width: 0.35rem;
+  margin-right: 0.1rem;
+  height: 0.35rem;
+  background: url("../img/item-bg.png") no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  font-size: 0.25rem;
+  font-weight: normal;
+  line-height: 0.3rem;
+  padding-left: 0.07rem;
+  box-sizing: border-box;
+}
+#index .rules section > div div p {
+  color: #666666;
+  line-height: 0.35rem;
+  font-size: 0.26rem;
+  margin: 0.15rem 0;
+}
+#index .rules section > div div p span {
+  float: right;
+}
+#index .open section {
+  width: 5.7rem;
+  height: 9.7rem;
+  background: url("../img/waitting-box.png") no-repeat;
+  background-size: 100% auto;
+}
+#index .open section .open-time {
+  text-align: center;
+  color: white;
+  font-size: 0.28rem;
+  margin-top: 0.75rem;
+  letter-spacing: 1px;
+}
+#index .open section .countdown {
+  text-align: center;
+  margin-top: 1.2rem;
+  color: #A91919;
+  font-size: 0.28rem;
+}
+#index .open section .countdown b {
+  font-size: 0.34rem;
+  margin: 0 1px;
+  color: #D83935;
+}
+#index .open section .openBtn {
+  width: 0.88rem;
+  height: 0.88rem;
+  margin: 4.6rem auto 0;
+  background: url("../img/open-text.png") center no-repeat;
+  background-size: auto 100%;
+  opacity: 0.5;
+}
+#index .open section .openBtn.TimeOut {
+  opacity: 1;
+}
+#index .open section .close {
+  top: calc(100% - 0.4rem) !important;
+}
+#index .noPrize.scale {
+  animation: sc 0.15s linear;
+}
+@keyframes sc {
+  0% {
+    -webkit-transform: scale(0.2);
+    -moz-transform: scale(0.2);
+    transform: scale(0.2);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+#index .noPrize section {
+  width: 7.5rem;
+  height: 8.82rem;
+  background: url("../img/noPrize.png") no-repeat;
+  background-size: 100% auto;
+  padding-top: 5.3rem;
+  box-sizing: border-box;
+}
+#index .noPrize section div {
+  text-align: center;
+}
+#index .noPrize section div p {
+  color: #666666;
+  font-size: 0.26rem;
+}
+#index .noPrize section div a {
+  color: #FA592C;
+  padding: 0 0.45rem;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  border: 1px solid #FA592C;
+  line-height: 0.55rem;
+  margin-top: 0.45rem;
+}
+#index .noPrize section .close {
+  top: calc(100% - 0.8rem) !important;
+}
+#index .getPrize.scale {
+  animation: sc 0.15s linear;
+}
+@keyframes sc {
+  0% {
+    -webkit-transform: scale(0.2);
+    -moz-transform: scale(0.2);
+    transform: scale(0.2);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+#index .getPrize section {
+  width: 5.84rem;
+  height: 5.4rem;
+  background: url("../img/redBag-box.png") no-repeat;
+  background-size: 100% auto;
+  padding-top: 1.1rem;
+  box-sizing: border-box;
+}
+#index .getPrize section div {
+  text-align: center;
+}
+#index .getPrize section div p {
+  color: #D20E16;
+  font-size: 0.33rem;
+}
+#index .getPrize section div p b {
+  font-size: 0.8rem;
+}
+#index .getPrize section div p span {
+  font-size: 0.35rem;
+  font-weight: 600;
+}
+#index .getPrize section div p:nth-of-type(2) {
+  font-size: 0.26rem;
+  color: #E29B2B;
+  margin-top: 1.8rem;
+}
+#index .getPrize section div a {
+  padding: 0 1.75rem;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  font-size: 0.3rem;
+  color: white;
+  background: url("../img/btn-yellow.png") no-repeat;
+  background-size: 100% 100%;
+  line-height: 0.9rem;
+  margin-top: 0.65rem;
+  text-shadow: 0 1px #F9941F, 1px 0 #F9941F, -1px 0 #F9941F, 0 -1px #F9941F;
+}
+#index .getPrize section .close {
+  top: calc(100% - 0.8rem) !important;
+}

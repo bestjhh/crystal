@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双旦狂欢，瓜分8888元福气红包</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="js/jquery-2.1.3.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/rem.js"></script>
+</head>
+<body>
+    <div class="fakeloader" >
+    <div class="spinner2">
+        <div class="spinner-container container1">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container2">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container3">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+    </div>
+</div>
+    <div id="index">
+        <img src="img/index-bg.png" alt="" class="index-bg">
+        <div class="people-txt">
+            <p>已有273927人参与活动</p>
+            <p>已有273927人获得瓜分资格</p>
+        </div>
+        <!--水晶球-->
+        <div class="crystal">
+            <!--球-->
+            <img src="img/crystalBall.png" alt="">
+            <div class="box">
+                <div class="wave"></div>
+                <span class="drop"></span>
+            </div>
+        </div>
+        <!--按钮-->
+        <div class="btns">
+            <div class="rule-btn"  onclick="$('.rules').show();"><a>活动规则</a></div>
+            <div class="shake-btn" onclick="$('.prizeRecord').show()"><a>摇一摇</a></div>
+            <div class="record-btn" onclick="$('.share').show();"><a>邀请好友</a></div>
+        </div>
+        <!--填写电话号码-->
+        <div class="phoneSubmit mask win">
+            <section>
+                <form action="">
+                    <input type="text" class="userName" value="Tom" placeholder="请输入您的姓名">
+                    <input type="text" class="phone" value="13272651430" placeholder="请输入您的手机号">
+                    <input type="button" class="submitBtn" value="收集祝福值">
+                </form>
+                <!--<i class="close closePhone" onclick="$('.phoneSubmit').hide();"></i>-->
+            </section>
+        </div>
+        <!--邀请好友-->
+        <div class="share mask" onclick="$(this).hide()">
+            <img src="img/share.png" alt="">
+        </div>
+        <!--活动锦囊-->
+        <div class="rules mask win">
+            <section>
+                <div>
+                    <h4>活动规则</h4>
+                    <div>
+                        <h3><span>1</span>活动时间</h3>
+                        <p>
+                            开始时间：2018年12月25日<br>
+                            祝福值收集截止时间：2018年12月29日中午12:00<br>
+                            开奖时间：2018年12月29日下午16:00—20：00<br>
+                        </p>
+                        <h3><span>2</span>活动详情</h3>
+                        <p>1.用户进入活动页面，填写姓名和手机号，点击“收集祝 福值”，进入收集页面，此时祝福槽是空的；</p>
+                        <p>2.邀请好友为自己收集祝福值：<br>可将收集页面分享给好友，好友进入页面即可为你增加 祝福值，在截止时间前集满88个祝福值即可等待开奖 （100%中奖）；</p>
+                        <p style="font-size: .24rem;color: #E16A6D">*1个好友一天只能为同一个微信号增加1个祝福值，每日每人最 多可为5个不同微信号增加祝福值。</p>
+                        <p>3.开奖时间到了以后，点击“开奖”，即可看到瓜分到的奖金金额，奖金会以红包形式自动发送至微信聊天窗口，点击领取即可；</p>
+                        <p>4.活动期间：我公司实施全程监控，杜绝异常数据的违规行为；</p>
+                        <p>5.凡参加活动的及参加助力的，都需要先关注“沙中E银”微信公众号。</p>
+
+                    </div>
+                </div>
+                <i class="close" onclick="$('.rules').hide()"></i>
+            </section>
+        </div>
+        <!--获赞记录-->
+        <div class="prizeRecord mask win">
+            <section>
+                <div>
+                    <h4>抽奖记录</h4>
+                    <div class="blessCount">
+                        <b>10</b>
+                        <p>总的祝福值</p>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>2018.10.12 17:25</td>
+                                <td>+1祝福值</td>
+                            </tr>
+                            <tr>
+                                <td>2018.10.12 17:25</td>
+                                <td>+1祝福值</td>
+                            </tr>
+                            <tr>
+                                <td>2018.10.12 17:25</td>
+                                <td>+1祝福值</td>
+                            </tr>
+                            <tr>
+                                <td>2018.10.12 17:25</td>
+                                <td>+1祝福值</td>
+                            </tr>
+                            <tr>
+                                <td>2018.10.12 17:25</td>
+                                <td>+1祝福值</td>
+                            </tr>
+                            <tr>
+                                <td>2018.10.12 17:25</td>
+                                <td>+1祝福值</td>
+                            </tr>
+                            <tr>
+                                <td>2018.10.12 17:25</td>
+                                <td>+1祝福值</td>
+                            </tr>
+                            <tr>
+                                <td>2018.10.12 17:25</td>
+                                <td>+1祝福值</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--<div class="get-btn"><a>一键领取红包</a></div>-->
+                    <!--<p>话费奖品，由工作人员进行充值。</p>-->
+                </div>
+                <i class="close" onclick="$('.prizeRecord').hide()"></i>
+            </section>
+        </div>
+        <!--开奖--->
+        <div class="open mask win">
+            <section>
+                <!--开奖时间-->
+                <p class="open-time">2018年12月29日下午16:00开奖</p>
+                <div class="openBtn"></div>
+                <!--倒计时-->
+                <p class="countdown"></p>
+                <i class="close" onclick="$('.open').hide()"></i>
+            </section>
+        </div>
+        <!--中奖-->
+        <div class="getPrize mask win">
+            <section>
+                <div>
+                    <p><b>1.11</b><span>元</span><br>恭喜您获得现金红包</p>
+                    <p>奖金将以红包形式自动发送至微信聊天窗口</p>
+                    <a onclick="$('.getPrize').hide()">确定</a>
+                </div>
+                <!--<i class="close" onclick="$('.getPrize').hide()"></i>-->
+            </section>
+        </div>
+    </div>
+</body>
+<script>
+    var good = 55;// 用户当前获得的赞
+    if(good >= 88){ // 满88个赞给出开奖提示
+        $(".open").show();
+    }
+    var pct = good/88/2.05*100;// 水面上升高度(1-48)
+    if(pct<5){ // 获赞少的也能看到一点水
+        pct = 8;
+    }
+    //水面上升
+    var style = document.styleSheets[0];
+    function rise(){
+        //style.deleteRule(9);
+        style.insertRule("@keyframes rotate_before{from{ transform: translate(0%,-5%) rotate(0deg); }to{ transform: translate(0%,-"+pct+"%) rotate(360deg);}}",9);//写入样式
+        style.insertRule("@keyframes rotate_after{ from{ transform: translate(0%,-5%) rotate(0deg); }to{ transform: translate(0%,-"+pct+"%) rotate(30deg);}}",10);//写入样式
+        style.insertRule("@keyframes loop0{ from{ transform:translate(0%,-"+pct+"%) rotate(0deg); }to{  transform:translate(0%,-"+pct+"%) rotate(360deg);}}",11);//写入样式
+    }
+    rise();
+    //水面不再上升
+    setTimeout(function(){
+        $(".wave").addClass("loop");
+    },8000);
+//    生成水珠
+   setInterval(function(){
+       var lt = Math.floor(Math.random()*(70-30)+30);
+       $(".drop").animate({top:"100%"},"slow",function(){
+           $(".drop").remove();
+           $(".box").append('<span class="drop" style="left: '+lt+'%;"></span>')
+       });
+   },2000);
+    //倒计时
+    var stop,now,hour,day,minutes,second,seconds,p = $(".countdown"),timer = null;
+    function countDown(){
+        stop = new Date("2018/12/29,14:00:00");
+        now = new Date();
+        seconds = parseInt((stop.getTime()-now.getTime())/1000);//剩余秒数
+        day = parseInt(seconds/60/60/24);
+        hour = parseInt(seconds/3600%24);
+        minutes = parseInt((seconds/60)%60);
+        second = parseInt(seconds%60);
+        if(second <10 ){
+            second = "0"+second
+        }
+        p.html("距离开奖还有<b>"+day+"</b>天<b>"+hour+"</b>小时<b>"+minutes+"</b>分<b>"+second+"</b>秒");
+        if(seconds > 0){
+            timer = setInterval(function(){
+                if(seconds > 0){
+                    seconds -=1;
+                    if(second > 0){
+                        second-=1;
+                        if(second <10 ){
+                            second = "0"+second
+                        }
+                    }else {
+                        second = 59;
+                        if(minutes > 0){
+                            minutes-=1;
+                        }else {
+                            minutes = 59;
+                            if(hour > 0){
+                                hour -= 1;
+                            }else {
+                                hour = 0;
+                            }
+                        }
+                    }
+                    p.html("距离开奖还有<b>"+day+"</b>天<b>"+hour+"</b>小时<b>"+minutes+"</b>分<b>"+second+"</b>秒");
+                }else {
+                    // 开奖时间到
+                    p.html("");
+                    $(".openBtn").addClass("TimeOut").click(function(){
+                        $(".getPrize").show();
+                        $(".open").hide()
+                    });
+                    clearInterval(timer);
+                }
+            },1000);
+        }else {
+            // 开奖时间到
+            p.html("");
+            $(".openBtn").addClass("TimeOut").click(function(){
+                $(".getPrize").show();
+                $(".open").hide();
+            });
+            clearInterval(timer);
+        }
+    }
+    countDown();
+    //验证手机号
+    var regPhone = /^1[356789][\d]{9}$/,phone = $(".phone"),flag = false;
+    $("input").focus(function(){
+        $(this).removeClass("wrong");
+    }).blur(function(){
+        window.scroll(0,0);
+        if($(this).hasClass("phone") && !regPhone.test(phone.val())){
+            phone.val("").attr("placeholder","请输入正确的手机号").addClass("wrong");
+            return false;
+        }
+        if($(this).hasClass("userName") && $(".userName").val()==""){
+            $(".userName").val("").attr("placeholder","姓名不能为空").addClass("wrong");
+            return false
+        }
+        if(regPhone.test(phone.val()) && $(".userName").val()) {
+            flag = true;
+        }
+    });
+    // 提交电话
+    $(".submitBtn").click(function(){
+        $("input").blur();
+        // 电话号码正确
+        if(flag){
+            $(".phoneSubmit").hide();
+        }
+    });
+    //监听加载状态改变
+    document.onreadystatechange = completeLoading;
+    //加载状态为complete时移除loading效果
+    function completeLoading() {
+        if (document.readyState == "complete") {
+            $('.fakeloader').hide();
+        }
+    }
+</script>
+</html>

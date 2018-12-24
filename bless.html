@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双旦狂欢，瓜分8888元福气红包</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="js/jquery-2.1.3.js"></script>
+    <script src="js/rem.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #130C0E;
+            -webkit-overflow-scrolling: touch;
+        }
+        img{
+            width: 100%;
+        }
+        .blessBtn{
+            display: block;
+            width: 4.2rem;
+            height: .9rem;
+            line-height: .9rem;
+            margin: -3.7rem auto 0;
+            background: url("img/bless-btn.png") no-repeat;
+            background-size: 100% 100%;
+            color: transparent;
+            position: relative;
+            z-index: 222;
+        }
+        .btns{
+            text-align: center;
+            position: relative;
+            z-index: 225;
+            margin-top: -3.7rem;
+        }
+        .btns a{
+            display: inline-block;
+            line-height: .9rem;
+            width: 2.5rem;
+            margin: 0 .15rem;
+            color: transparent;
+        }
+        .bless-success{display: none}
+    </style>
+</head>
+<body>
+    <!--给Ta送祝福-->
+    <div class="bless">
+        <img src="img/bless.png" alt="" class="blessImg">
+        <a class="blessBtn" onclick="$('.bless').hide();$('.bless-success').show()">给TA送祝福</a>
+    </div>
+    <!--送祝福成功-->
+    <div class="bless-success">
+        <img src="img/bless-success.png" alt="" class="blessImg">
+        <div class="btns">
+            <a class="iKnow" onclick="WeixinJSBridge.call('closeWindow')">知道了</a>
+            <a class="look" href="index.html">一起去看看</a>
+        </div>
+    </div>
+</body>
+</html>
