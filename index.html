@@ -168,15 +168,14 @@
     </div>
 </body>
 <script>
-    var good = 55;// 用户当前获得的赞
-    if(good >= 88){ // 满88个赞给出开奖提示
-        $(".open").show();
-    }
-    var pct = good/88/2.05*100;// 水面上升高度(1-48)
-    if(pct<5){ // 获赞少的也能看到一点水
-        pct = 8;
-    }
-    //水面上升
+/*
+     * pct 为动态传入的值，用于控制水面上升的高度
+     * 需根据自己需求计算百分比pct
+    * pct = 0时没有水
+    * pct = 55时水满
+*/
+    var pct = 35; 
+// 水面上升和波动动画
     var style = document.styleSheets[0];
     function rise(){
         //style.deleteRule(9);
