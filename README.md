@@ -1,5 +1,5 @@
 ### 动态能量加载水球：
-<img src="https://img-blog.csdnimg.cn/20181224113151390.gif">
+<img src="https://github.com/bestjhh/images/blob/master/13744893.jpg"/>
 
 * 动态传值控制水面上升的高度
 * 上升到一定高度后可停止上升,添加波浪效果
